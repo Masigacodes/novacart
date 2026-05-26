@@ -4,452 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCart</title>
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-[url('./images/bg.jpg')] bg-cover bg-center bg-fixed">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-gray-800 text-white p-4 shadow-lg">
+<!-- NAV -->
+<nav class="bg-gray-800 text-white p-4 shadow-lg">
 <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
 
-    <!-- Logo -->
-    <h1 class="text-3xl font-bold mb-4 md:mb-0">
-        NovaCart
-    </h1>
+    <h1 class="text-3xl font-bold mb-4 md:mb-0">NovaCart</h1>
 
-    <!-- Navigation Links -->
     <ul class="flex space-x-6">
-
-        <li>
-            <a href="#home" class="hover:text-gray-300 transition">
-                Home
-            </a>
-        </li>
-
-        <li>
-            <a href="#products" class="hover:text-gray-300 transition">
-                Products
-            </a>
-        </li>
-
-        <li>
-            <a href="#about" class="hover:text-gray-300 transition">
-                About
-            </a>
-        </li>
-
-        <li>
-            <a href="#contact" class="hover:text-gray-300 transition">
-                Contact
-            </a>
-        </li>
-
+        <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#products" class="hover:text-gray-300">Products</a></li>
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
     </ul>
 </div>
 
-        <!-- Search Bar -->
-        <div class="container mx-auto mt-4">
-            <input 
-                type="text"
-                placeholder="Search products..."
-                class="w-full md:w-1/3 p-2 rounded text-black border border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-        </div>
-    </nav>
+<div class="container mx-auto mt-4">
+    <input type="text" placeholder="Search products..."
+    class="w-full md:w-1/3 p-2 rounded text-black">
+</div>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="container mx-auto text-center py-12 px-4">
+<!-- HERO -->
+<section id="home" class="text-center py-12 px-4">
+    <h1 class="text-5xl font-bold text-white mb-4">Welcome to NovaCart</h1>
+    <p class="text-pink-200 mb-6">Your one-stop shop for all your fashion needs!</p>
+    <a href="/products" class="bg-blue-500 text-white px-6 py-3 rounded">Shop Now</a>
+</section>
 
-        <h1 class="text-5xl font-bold mb-4 text-white">
-            Welcome to NovaCart
-        </h1>
+<!-- FEMALE -->
+<section id="products" class="container mx-auto px-4 py-8">
 
-        <p class="text-lg text-pink-200 mb-6">
-            Your one-stop shop for all your fashion needs!
-        </p>
+<h2 class="text-3xl font-bold text-center text-white mb-8">Female Products</h2>
 
-        <a 
-            href="/products"
-            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"
-        >
-            Shop Now
-        </a>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-    </section>
+<!-- 1 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/earring.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Earrings</h3>
+<p class="mb-4">$19.99</p>
 
-    <!-- Female Products Section -->
-    <section class="container mx-auto px-4 py-8">
+<div class="flex justify-between">
+<a href="/products/1" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-        <h2 class="text-3xl font-bold mb-8 text-center text-white">
-            Female Products
-        </h2>
+<!-- 2 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/necklace.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Necklace</h3>
+<p class="mb-4">$29.99</p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="flex justify-between">
+<a href="/products/2" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-            <!-- Product Card 1 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/earring.jpg"
-                    alt="Earrings"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
+<!-- 3 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/bracelet.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Bracelet</h3>
+<p class="mb-4">$24.99</p>
 
-                <h3 class="text-xl font-bold mb-2">
-                    Earrings
-                </h3>
+<div class="flex justify-between">
+<a href="/products/3" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-                <p class="text-gray-700 mb-4">
-                    $19.99
-                </p>
+<!-- 4 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/anklet.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Anklets</h3>
+<p class="mb-4">$19.99</p>
 
-                <a 
-                    href="/products/1"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
+<div class="flex justify-between">
+<a href="/products/4" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-            <!-- Product Card 2 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/necklace.jpg"
-                    alt="Necklace"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
+<!-- 5 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/rings.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Rings</h3>
+<p class="mb-4">$19.99</p>
 
-                <h3 class="text-xl font-bold mb-2">
-                    Necklace
-                </h3>
+<div class="flex justify-between">
+<a href="/products/5" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-                <p class="text-gray-700 mb-4">
-                    $29.99
-                </p>
+<!-- 6 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/waist-chain.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Waistchain</h3>
+<p class="mb-4">$19.99</p>
 
-                <a 
-                    href="/products/2"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
+<div class="flex justify-between">
+<a href="/products/6" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-            <!-- Product Card 3 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/bracelet.jpg"
-                    alt="Bracelet"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
+</div>
+</section>
 
-                <h3 class="text-xl font-bold mb-2">
-                    Bracelet
-                </h3>
+<!-- MALE -->
+<section class="container mx-auto px-4 py-8">
 
-                <p class="text-gray-700 mb-4">
-                    $24.99
-                </p>
+<h2 class="text-3xl font-bold text-center text-white mb-8">Male Products</h2>
 
-                <a 
-                    href="/products/3"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-            <!-- Product Card 4 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/anklet.jpg"
-                    alt="Anklets"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
+<!-- 1 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/watch.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Watches</h3>
+<p class="mb-4">$49.99</p>
 
-                <h3 class="text-xl font-bold mb-2">
-                    Anklets
-                </h3>
+<div class="flex justify-between">
+<a href="/products/7" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-                <p class="text-gray-700 mb-4">
-                    $19.99
-                </p>
+<!-- 2 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/men-bracelet.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Bracelet</h3>
+<p class="mb-4">$29.99</p>
 
-                <a 
-                    href="/products/4"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
+<div class="flex justify-between">
+<a href="/products/8" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-            <!-- Product Card 5 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/rings.jpg"
-                    alt="Rings"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
+<!-- 3 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/chain.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Chain</h3>
+<p class="mb-4">$39.99</p>
 
-                <h3 class="text-xl font-bold mb-2">
-                    Rings
-                </h3>
+<div class="flex justify-between">
+<a href="/products/9" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-                <p class="text-gray-700 mb-4">
-                    $19.99
-                </p>
+<!-- 4 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/studs.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Studs</h3>
+<p class="mb-4">$59.99</p>
 
-                <a 
-                    href="/products/5"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
+<div class="flex justify-between">
+<a href="/products/10" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-            <!-- Product Card 6 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/waist-chain.jpg"
-                    alt="Waistchain"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
+<!-- 5 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/men-ring.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Rings</h3>
+<p class="mb-4">$14.99</p>
 
-                <h3 class="text-xl font-bold mb-2">
-                    Waistchain
-                </h3>
+<div class="flex justify-between">
+<a href="/products/11" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-                <p class="text-gray-700 mb-4">
-                    $19.99
-                </p>
+<!-- 6 -->
+<div class="bg-white p-4 rounded shadow">
+<img src="/images/pendant.jpg" class="h-48 w-full object-cover rounded mb-4">
+<h3 class="font-bold">Pendant</h3>
+<p class="mb-4">$69.99</p>
 
-                <a 
-                    href="/products/6"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
+<div class="flex justify-between">
+<a href="/products/12" class="bg-blue-500 text-white px-4 py-2 text-sm rounded">View Details</a>
+<button class="bg-pink-500 text-white px-4 py-2 text-sm rounded">Add to Cart</button>
+</div>
+</div>
 
-        </div>
-    </section>
+</div>
+</section>
 
-    <!-- Male Products Section -->
-    <section class="container mx-auto px-4 py-8">
+<!-- ABOUT -->
+<section id="about" class="py-24 px-6 text-white text-center">
 
-        <h2 class="text-3xl font-bold mb-8 text-center text-white">
-            Male Products
-        </h2>
+    <div class="max-w-5xl mx-auto bg-white/10 backdrop-blur-md rounded-3xl p-10 shadow-xl border border-white/20">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-            <!-- Product Card 1 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/watch.jpg"
-                    alt="Watches"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
-
-                <h3 class="text-xl font-bold mb-2">
-                    Watches
-                </h3>
-
-                <p class="text-gray-700 mb-4">
-                    $49.99
-                </p>
-
-                <a 
-                    href="/products/7"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
-
-            <!-- Product Card 2 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/men-bracelet.jpg"
-                    alt="Bracelet"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
-
-                <h3 class="text-xl font-bold mb-2">
-                    Bracelet
-                </h3>
-
-                <p class="text-gray-700 mb-4">
-                    $29.99
-                </p>
-
-                <a 
-                    href="/products/8"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
-
-            <!-- Product Card 3 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/chain.jpg"
-                    alt="Chain"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
-
-                <h3 class="text-xl font-bold mb-2">
-                    Chain
-                </h3>
-
-                <p class="text-gray-700 mb-4">
-                    $39.99
-                </p>
-
-                <a 
-                    href="/products/9"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
-
-            <!-- Product Card 4 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/studs.jpg"
-                    alt="Studs"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
-
-                <h3 class="text-xl font-bold mb-2">
-                    Studs
-                </h3>
-
-                <p class="text-gray-700 mb-4">
-                    $59.99
-                </p>
-
-                <a 
-                    href="/products/10"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
-
-            <!-- Product Card 5 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/men-ring.jpg"
-                    alt="Rings"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
-
-                <h3 class="text-xl font-bold mb-2">
-                    Rings
-                </h3>
-
-                <p class="text-gray-700 mb-4">
-                    $14.99
-                </p>
-
-                <a 
-                    href="/products/11"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
-
-            <!-- Product Card 6 -->
-            <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-xl transition">
-                <img 
-                    src="/images/pendant.jpg"
-                    alt="Pendant"
-                    class="w-full h-48 object-cover rounded mb-4"
-                >
-
-                <h3 class="text-xl font-bold mb-2">
-                    Pendant
-                </h3>
-
-                <p class="text-gray-700 mb-4">
-                    $69.99
-                </p>
-
-                <a 
-                    href="/products/12"
-                    class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                >
-                    View Details
-                </a>
-            </div>
-            
-   <!-- About Section -->
-<section class="bg-gradient-to-r from-pink-100 via-white to-purple-100 py-20 px-6 mt-12 rounded-3xl shadow-lg mx-4">
-
-    <div class="max-w-4xl mx-auto text-center">
-
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
-            About Us
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            About NovaCart
         </h2>
 
         <div class="w-24 h-1 bg-pink-500 mx-auto mb-8 rounded-full"></div>
 
-        <p class="text-gray-600 text-lg leading-8">
-            At <span class="font-bold text-pink-600">NovaCart</span>, we are passionate about providing our customers with the latest and greatest in fashion accessories. Our mission is to help you express your unique style and personality through our carefully curated collection of jewelry and accessories.
+        <p class="text-lg text-gray-200 leading-8 mb-6">
+            Welcome to <span class="font-bold text-pink-400">NovaCart</span>, your trusted destination for stylish, affordable, and high-quality fashion jewelry. We believe that fashion is a form of self-expression, and every piece you wear should tell your story.
         </p>
 
-        <p class="text-gray-600 text-lg leading-8 mt-6">
-            Whether you're looking for a statement piece or a subtle accent, we have something for everyone. We pride ourselves on quality, affordability, and exceptional customer service. Thank you for choosing NovaCart as your go-to destination for all your fashion needs!
+        <p class="text-lg text-gray-200 leading-8 mb-6">
+            Our collection is carefully curated to bring you the latest trends in earrings, necklaces, bracelets, rings, watches, and more — designed for both men and women who value elegance and confidence.
+        </p>
+
+        <p class="text-lg text-gray-200 leading-8">
+            At NovaCart, we focus on <span class="text-pink-400 font-semibold">quality, affordability, and customer satisfaction</span>. Every product is selected with care to ensure you get the best value and style in one place.
         </p>
 
     </div>
 
 </section>
 
-<!-- Contact Section -->
-<section class="bg-gray-900 py-20 px-6 mt-12 rounded-3xl shadow-lg mx-4 mb-12">
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6 text-white text-center bg-gray-900">
 
-    <div class="max-w-3xl mx-auto text-center">
+    <div class="max-w-4xl mx-auto">
 
-        <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
             Contact Us
         </h2>
 
         <div class="w-24 h-1 bg-pink-500 mx-auto mb-8 rounded-full"></div>
 
-        <p class="text-gray-300 text-lg leading-8 mb-8">
-            We'd love to hear from you! If you have any questions, comments, or concerns, feel free to reach out to us anytime.
+        <p class="text-gray-300 text-lg mb-10 leading-8">
+            We’d love to hear from you! Whether you have questions about our products, need help with an order, or just want to give feedback — our team is always ready to help you.
         </p>
 
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+        <!-- Contact Card -->
+        <div class="grid md:grid-cols-2 gap-6">
 
-            <p class="text-pink-400 text-xl font-semibold mb-3">
-                Email Us
-            </p>
+            <!-- Email -->
+            <div class="bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur-md">
+                <h3 class="text-xl font-semibold text-pink-400 mb-2">Email Support</h3>
+                <p class="text-gray-300">Fast response within 24 hours</p>
+                <a href="mailto:info@novacart.com" class="text-white mt-3 inline-block hover:text-pink-400">
+                    info@novacart.com
+                </a>
+            </div>
 
-            <a href="mailto:info@novacart.com"
-               class="text-white text-lg hover:text-pink-400 transition duration-300">
-                info@novacart.com
-            </a>
+            <!-- Support -->
+            <div class="bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur-md">
+                <h3 class="text-xl font-semibold text-pink-400 mb-2">Customer Care</h3>
+                <p class="text-gray-300">Available Mon - Sat</p>
+                <p class="text-white mt-3">We assist with orders, tracking & refunds</p>
+            </div>
 
+        </div>
+
+        <!-- Socials -->
+        <div class="mt-10 text-gray-300">
+            <p>Follow us for updates and new arrivals:</p>
+            <div class="flex justify-center gap-6 mt-4 text-pink-400">
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>TikTok</span>
+            </div>
         </div>
 
     </div>
 
 </section>
 
-    </section>
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 mt-12">
-        <div class="container mx-auto text-center">
-            &copy; 2026  NovaCart. All rights reserved.
-        </div>
+<!-- FOOTER -->
+<footer class="bg-gray-800 text-white text-center py-6">
+© 2026 NovaCart
+</footer>
 
 </body>
 </html>
